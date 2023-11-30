@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Logra tu sueño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/clase.prestamo.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1>LOGRA TENER ESE LOCAL QUE TANTO SOÑASTE</h1>
+    <div class="panel-cotizacion ">
+        <h2>¡Nosotros te ayudamos!</h2>
+        <p>Necesitamos que nos brindes la siguiente informaciòn:</p>
+
+        <label for="montoPrestamo">¿Que monto necesitas para lograr tu sueño?</label>
+        <input type="number" id="montoPrestamo" placeholder="Ingresa el monto" required>
+        
+        <label for="plazoPago">¿En cuantos meses podrias devolverlo?</label>
+        <input type="number" id="plazoPago" placeholder="Ingresa el plazo en meses"  value="12" min="12" max="84" step="12" required>
+        
+        <label for="tasaInteres">Podemos ayudarte en los siguientes rubros</label>
+        <select id="selectDestino">
+            <option disabled selected>Selecciona uno...</option>
+        </select>
+        
+        <button class="button-calcular" type="button">Calculalo aquì</button>
+    </div>
+</body>
+</html>
